@@ -7,7 +7,7 @@ async function saveItem(item) {
     savedItems.push(item);
 
     localStorage.setItem("savedItems", JSON.stringify(savedItems));
-
+    // alert user about the saved items
     alert(
       `${item} saved successfully! You have ${savedItems.length} items in your "Save for Later" folder.`
     );
@@ -35,6 +35,7 @@ async function showSavedItems() {
           </li>`
         )
         .join("")}
+        //create a new form to
       </ul>
       <form>
         <label for="comment">Add Comment:</label><br>
