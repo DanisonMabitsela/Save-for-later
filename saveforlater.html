@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Save for Later</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Kwena Danison Mabitsela</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Testimony.html">Quotes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="saveforlater.html">Saveforlater</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1>Save for Later</h1>
+    <p>
+      <a href="Saveditems.html" onclick="showSavedItems()">View Saved Items</a>
+    </p>
+
+    <h2>Article</h2>
+    <p>
+      Pancakes are a tasty breakfast food that can be customized with various
+      flavors and toppings. To make pancakes, mix basic ingredients like flour,
+      sugar, eggs, milk, and butter, and cook on a non-stick pan until golden
+      brown. Serve with butter, syrup, or other toppings of your choice.
+      Pancakes are a simple and delicious way to start your day.
+    </p>
+    <button onclick="saveItem('Article 1')">Save for Later</button>
+
+    <h2>pan cake image</h2>
+    <img
+      src="https://floridapanhandle.com/wp-content/uploads/2020/07/Donut-Hole-Destin-Restaurant-11.jpg"
+      alt="Image 1"
+      height="300px"
+    />
+    <button onclick="saveItem('Image 1')">Save for Later</button>
+
+    <h2>Recipe</h2>
+    <h2>Ingredients:</h2>
+    <ul>
+      <li>1 cup all-purpose flour</li>
+      <li>2 tablespoons sugar</li>
+      <li>2 teaspoons baking powder</li>
+      <li>1/2 teaspoon salt</li>
+      <li>1 cup milk</li>
+      <li>1 large egg</li>
+      <li>2 tablespoons unsalted butter, melted</li>
+      <li>1 teaspoon vanilla extract</li>
+      <li>Additional butter or cooking spray for cooking</li>
+    </ul>
+    <h2>Instructions:</h2>
+    <ol>
+      <li>
+        In a large bowl, whisk together the flour, sugar, baking powder, and
+        salt.
+      </li>
+      <li>
+        In a separate bowl, whisk together the milk, egg, melted butter, and
+        vanilla extract.
+      </li>
+      <li>
+        Pour the wet ingredients into the dry ingredients and whisk until just
+        combined. Do not overmix, a few lumps are okay.
+      </li>
+      <li>
+        Heat a non-stick pan or griddle over medium heat. Once hot, add a small
+        amount of butter or cooking spray.
+      </li>
+      <li>
+        Use a 1/4 cup measure to pour batter onto the pan. Cook until bubbles
+        form on the surface of the pancake and the edges start to look set,
+        about 2-3 minutes. Flip the pancake and cook for an additional 1-2
+        minutes on the other side.
+      </li>
+      <li>
+        Repeat with remaining batter, adding additional butter or cooking spray
+        to the pan as needed.
+      </li>
+      <li>
+        Serve warm with your favorite toppings, such as maple syrup, fresh
+        fruit, or whipped cream.
+      </li>
+    </ol>
+    <button onclick="saveItem('Recipe 1')">Save for Later</button>
+
+    <div id="alert"></div>
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-URD84vAlo1s+8AqJ3qX9s9vT0rEo+Pc/DuiG0Rst1kZzEItZ26ibxkwz3pXpZJ0o"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
