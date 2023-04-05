@@ -35,7 +35,7 @@ async function showSavedItems() {
           </li>`
         )
         .join("")}
-        //create a new form to
+        
       </ul>
       <form>
         <label for="comment">Add Comment:</label><br>
@@ -58,6 +58,7 @@ async function showSavedItems() {
     async function saveCommentAndShowMessage(comment) {
       try {
         const savedComments =
+          //save items to local storage
           JSON.parse(localStorage.getItem("savedComments")) || [];
         savedComments.push(comment);
         localStorage.setItem("savedComments", JSON.stringify(savedComments));
